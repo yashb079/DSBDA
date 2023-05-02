@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid Vaccine Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Covid Vaccine Analytics</h1>
+    </div>
+    <ul>
+        <li><a href="{{ url_for('first_dose') }}">First Dose Administered Statewise</a></li>
+        <li><a href="{{ url_for('second_dose') }}">Second Dose Administered Statewise</a></li>
+        <li><a href="{{ url_for('males_vaccinated') }}">Males Vaccinated Statewise</a></li>
+        <li><a href="{{ url_for('females_vaccinated') }}">Females Vaccinated Statewise</a></li>
+    </ul>
+</body>
+</html>
